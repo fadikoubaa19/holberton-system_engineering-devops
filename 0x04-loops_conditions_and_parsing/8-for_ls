@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# display the content
+list=$(ls)
+for x in $list
+do
+echo "$x" | cut -d'-' -f2
+done
