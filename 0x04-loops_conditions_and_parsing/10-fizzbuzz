@@ -1,19 +1,18 @@
 #!/usr/bin/env bash
 # from 1 to 100
 
-for i in {1..100}
+for n in {1..100}
 do
-if [ $((i % 15)) -eq "0" ]
+if [ $((n % 15)) -eq "0" ]
 then
     echo "FizzBuzz"
-elif [ $((num % i)) -eq "0" ]
+elif [ $((n % 3)) -eq "0" ]
 then
     echo "Fizz"
-elif [ $((num % i)) -eq "0" ]
+elif [ $((n % 5)) -eq "0" ]
 then
     echo "Buzz"
 else
-    echo $num
+    echo $n
 fi
 done
-
