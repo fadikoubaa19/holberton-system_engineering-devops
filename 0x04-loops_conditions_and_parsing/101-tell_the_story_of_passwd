@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-# displays contents of file etc/pass
-
-FILE=/etc/passwd
-while IFS=: read -r USER PASS USER_ID GROUP_ID USER_ID_INFO HOME_DIR SHELL
+# This script is displaying "Holberton School" 10 times
+input="/etc/passwd"
+while IFS=$'\n': read -r USERNAME PASSWORD USER_ID GROUP_ID USER_ID_INFO HOME_DIRECTORY COMMAND
 do
-    echo "The user $USER is part of the $GROUP_ID gang, lives in $HOME_DIR and rides $SHELL. $USER_ID's place is protected by the passcode $PASS, more info about the user here: $USER_ID_INFO"
-done < $FILE
+  echo "The user $USERNAME is part of the $GROUP_ID gang, lives in $HOME_DIRECTORY and rides $COMMAND. $USER_ID's place is protected by the passcode $PASSWORD, more info about the user here: $USER_ID_INFO"
+done < "$input"
