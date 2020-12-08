@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# connecting problemes
+ssh -i ~/.ssh/holberton ubuntu@35.196.158.6
