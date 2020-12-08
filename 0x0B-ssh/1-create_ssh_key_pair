@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# RSA
+ssh-keygen -t rsa -b 4096 -f "holberton" -N "betty"
