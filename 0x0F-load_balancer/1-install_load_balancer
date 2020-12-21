@@ -3,7 +3,7 @@
 sudo apt-get -y update
 sudo apt-get install -y haproxy=1.5\*
 FILE=/etc/haproxy/haproxy.cfg
-echo "listen 355-lb-01" | sudo tee -a $FILE
+echo "listen 2062-lb-01" | sudo tee -a $FILE
 echo "bind *:80" | sudo tee -a $FILE
 echo "mode http" | sudo tee -a $FILE
 echo "balance roundrobin" | sudo tee -a $FILE
