@@ -1,9 +1,13 @@
 
 #!/usr/bin/env bash
-# install HAproxy and confugure it 
-add-apt-repository -y ppa:vbernat/haproxy-1.5
-apt-get -y update
-apt-get -y install haproxy
-service haproxy start
-echo -e "listen 1308-lb-01\n\tbind *:80\n\tstats enable\n\tbalance roundrobin\n\tserver 1308-web-01 35.237.127.243:80 check\n\tserver 1308-web-02 54.90.102.32:80 check" >> /etc/haproxy/haproxy.cfg
-service haproxy restart
+# install HAproxy and confugure it
+sudo apt-get -y update
+sudo apt-get install -y haproxy=1.5\*
+FILE=/etc/haproxy/haproxy.cfg
+echo "listen 355-lb-01" | sudo tee -a $FILE
+echo "bind *:80" | sudo tee -a $FILE
+echo "mode http" | sudo tee -a $FILE
+echo "balance roundrobin" | sudo tee -a $FILE
+echo "server 2062-web-02 35.196.67.203 check" | sudo tee -a $FILE
+echo "server 2062-web-01 34.75.13.177 check" | sudo tee -a $FILE
+sudo service haproxy restart
