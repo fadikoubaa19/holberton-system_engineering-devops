@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # install HAproxy and confugure it
-sudo apt-get -y update
-sudo apt-get install -y haproxy=1.5\*
-FILE=/etc/haproxy/haproxy.cfg
+sudo add-apt-repository ppa:vbernat/haproxy-1.8
+sudo apt-get update
+sudo apt-get install haproxy
 echo "listen 2062-lb-01" | sudo tee -a $FILE
 echo "bind *:80" | sudo tee -a $FILE
 echo "mode http" | sudo tee -a $FILE
