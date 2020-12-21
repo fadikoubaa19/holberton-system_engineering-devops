@@ -1,0 +1,9 @@
+
+#!/usr/bin/env bash
+# install HAproxy and confugure it 
+add-apt-repository -y ppa:vbernat/haproxy-1.5
+apt-get -y update
+apt-get -y install haproxy
+service haproxy start
+echo -e "listen 1308-lb-01\n\tbind *:80\n\tstats enable\n\tbalance roundrobin\n\tserver 1308-web-01 35.237.127.243:80 check\n\tserver 1308-web-02 54.90.102.32:80 check" >> /etc/haproxy/haproxy.cfg
+service haproxy restart
