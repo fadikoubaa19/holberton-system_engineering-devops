@@ -1,4 +1,4 @@
-# ssh config
+# ssh configs
 exec { 'echo "PasswordAuthentication no" >> /etc/ssh/ssh_config':
   provider => shell,
 }
