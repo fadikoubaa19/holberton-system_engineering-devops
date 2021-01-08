@@ -1,4 +1,4 @@
-# HEre we are ome puppet
+# HEre we are  puppet
 
 exec {'update':
   command  => 'sudo apt-get update',
