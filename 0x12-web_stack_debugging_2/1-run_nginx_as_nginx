@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# changes user into nginex
+# run as nginex
 sudo pkill -f apache2
 sudo chmod 644 /etc/nginx/nginx.conf
 sudo chown nginx:nginx /etc/nginx/nginx.conf
