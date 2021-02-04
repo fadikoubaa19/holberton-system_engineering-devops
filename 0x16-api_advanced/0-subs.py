@@ -1,7 +1,12 @@
 #!/usr/bin/python3
-
+"""
+subs counting
+"""
 import requests
 from sys import argv
+"""
+function number_of_subscirbers
+"""
 
 
 def number_of_subscribers(subreddit):
