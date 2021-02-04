@@ -10,15 +10,13 @@ function number_of_subscirbers
 
 
 def top_ten(subreddit):
-    url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
     try:
-        req = requests.get(url, headers={'User-agent': 'fedi'})
-
-        for post in req.get('data').get('children'):
-            print(post.get('data').get('title'))
-    except Exception:
+        urlex = 'hot.json?limit=10'
+        url = 'https://www.reddit.com/r/{}/{}'.format(subreddit, urlex)
+        req = requests.get(url, headers={'User-agent': 'hello-student 0.1'})
+        j = req.json()
+        data = j.get('data').get('children')
+        for i in data:
+            print(i.get('data').get('title'))
+    except AttributeError:
         print(None)
-
-
-if __name__ == "__main__":
-    top_ten(argv[1])
