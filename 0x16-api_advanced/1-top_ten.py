@@ -13,7 +13,8 @@ def top_ten(subreddit):
     url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
     try:
         req = requests.get(url, headers={'User-agent': 'fedi'})
-        for post in url.get('data').get('children'):
+
+        for post in req.get('data').get('children'):
             print(post.get('data').get('title'))
     except Exception:
         print(None)
