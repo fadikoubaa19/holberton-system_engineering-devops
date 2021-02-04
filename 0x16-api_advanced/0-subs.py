@@ -5,14 +5,10 @@ from sys import argv
 
 
 def number_of_subscribers(subreddit):
-    user = {'User-Agent': 'example'}
-    url = requests.get('https://www.reddit.com/r/{}/about.json'
-                       .format(subreddit), headers=user).json()
+    url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
     try:
-        return url.get('data').get('subscribers')
-    except Exception:
+        req = requests.get(url, headers={'User-agent': 'fedi'})
+        subs = req.json()
+        return subs.get('data').get('subscribers')
+    except AttributeError:
         return 0
-
-
-if __name__ == "__main__":
-    number_of_subscribers(argv[1])
