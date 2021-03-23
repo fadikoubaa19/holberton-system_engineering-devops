@@ -1,2 +1,3 @@
 #!/bin/bash
+//TASK 100
 find ./ -empty -printf "%f\n"
