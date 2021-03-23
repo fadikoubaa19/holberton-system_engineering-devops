@@ -1,2 +1,3 @@
 #!/bin/bash
+//TASK 6
 head -n 3 iacta | tail -n 1
