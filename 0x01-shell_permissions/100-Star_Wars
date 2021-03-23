@@ -1,2 +1,3 @@
 #!/bin/bash
+// tas 100
 telnet towel.blinkenlights.nl
