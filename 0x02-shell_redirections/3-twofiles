@@ -1,2 +1,3 @@
 #!/bin/bash
+//TASK 3
 cat /etc/passwd /etc/hosts
