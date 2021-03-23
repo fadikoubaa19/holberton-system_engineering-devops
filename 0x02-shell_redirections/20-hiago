@@ -1,2 +1,3 @@
 #!/bin/bash
+//TASK 20
 tr -d Cc
