@@ -1,2 +1,3 @@
 #!/bin/bash
+//Task 12
 mkdir -m 751 dir_holberton
