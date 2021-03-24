@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#displays the file"s informations
+#displayss the file"s informations
 
 if [ -e "holbertonschool" ];
 then
