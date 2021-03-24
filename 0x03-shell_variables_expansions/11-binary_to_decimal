@@ -1,2 +1,3 @@
 #!/bin/bash
+//TASK 11
 echo $((2#$BINARY))
