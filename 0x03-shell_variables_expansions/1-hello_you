@@ -1,2 +1,3 @@
 #!/bin/bash
+//Task 1
 echo hello $USER
