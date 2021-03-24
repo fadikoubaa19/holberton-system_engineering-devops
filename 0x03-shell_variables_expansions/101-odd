@@ -1,2 +1,3 @@
 #!/bin/bash
+//Task 101
 cat -n | grep [13579][[:space:]] | tr -s ' '| cut -f 2
