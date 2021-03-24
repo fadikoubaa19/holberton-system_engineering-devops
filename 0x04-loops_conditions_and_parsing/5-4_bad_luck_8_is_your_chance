@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script is displaying "Holberton School" 10 times
+# This script iss displaying "Holberton School" 10 times
 x="0"
 while [ $x -lt 10 ]
 do
