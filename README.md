@@ -1,41 +1,79 @@
-Higher-level programming:
 
 
-      Python programming
+      Shell
 
-      HTML/CSS
+    As introduced in: 0x04. Loops, conditions and parsing.
 
-      Right-engineering, right-documenting
+      DNS
 
-      The trinity of front-end quality
+    As introduced in: 0x0C. Web server, 0x10. HTTPS SSL, 0x09. Web infrastructure design.
 
-      Closures, callbacks and non-blocking I/O
+      Monitoring
 
-      JavaScript in the browser
+    As introduced in: 0x18. Webstack monitoring, 0x09. Web infrastructure design.
 
-      HTTP and web architectures
+      Web Server
 
-      Dealing with data statically versus dynamically
+    As introduced in: 0x0C. Web server, 0x17. Web stack debugging #3, 0x09. Web infrastructure design, 0x1A. Application server.
 
-      Databases
+      Regular Expression
 
-      Rest API
+    As introduced in: 0x06. Regular expression.
 
-    As introduced in: 0x05. AirBnB clone - RESTful API.
+      Security
 
-      Never forget a test
+      Ruby scripting
 
-      Using cURL to debug
+      Network basics
 
-    As introduced in: 0x10. Python - Network #0.
+    As introduced in: Attack is the best defense, 0x0D. Web stack debugging #0, 0x0E. Web stack debugging #1, 0x09. Web infrastructure design.
 
-      Python packages
+      AWS
 
-    As introduced in: 0x00. AirBnB clone - The console, 0x02. AirBnB clone - MySQL.
+      On-call
 
-      JavaScript programming
+      CI/CD
 
-      AirBnB clone
+    As introduced in: 0x0C. Web server, 0x03. AirBnB clone - Deploy static.
 
-    As introduced in: 0x00. AirBnB clone - The console, 0x01. AirBnB clone - Web static, 0x03. AirBnB clone - Deploy static, 0x02. AirBnB clone - MySQL, 0x04. AirBnB clone - Web framework, 0x05. AirBnB clone - RESTful API, 0x06. AirBnB clone - Web dynamic.
+      Load balancer
 
+    As introduced in: 0x0F. Load balancer, 0x09. Web infrastructure design.
+
+      Database administration
+
+    As introduced in: 0x14. MySQL.
+System engineering & DevOps:
+      Configuration management
+
+      Docker
+
+    As introduced in: Attack is the best defense, 0x0D. Web stack debugging #0, 0x0C. Web server.
+
+      Server
+
+    As introduced in: 0x0B. SSH, 0x18. Webstack monitoring, 0x09. Web infrastructure design, 0x1A. Application server.
+
+      Web stack debugging
+
+    As introduced in: 0x0D. Web stack debugging #0, 0x0C. Web server, 0x0E. Web stack debugging #1, 0x0F. Load balancer, 0x10. HTTPS SSL, 0x14. MySQL, 0x13. Firewall, 0x12. Web stack debugging #2, 0x17. Web stack debugging #3, 0x1A. Application server.
+
+      Web stack design
+
+      Application server
+
+      What is a Child Process?
+
+    As introduced in: 0x0C. Web server.
+
+      DevOps
+
+    As introduced in: 0x0C. Web server.
+
+      System Administration
+
+    As introduced in: 0x0C. Web server.
+
+      Site Reliability Engineering
+
+    As introduced in: 0x0C. Web server.
