@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# FIle managing the file "manage_my_process"
+if [ "$#" != 1 ]; then
+	echo "Usage: manage_my_process {start|stop|restart}"
+elif [ "$1" = "start" ]; then
+	./manage_my_process &
+	sudo touch /var/run/my_process.pid
+	echo "$!" >> /var/run/my_process.pid
+	echo "manage_my_process started"
+elif [ "$1" = "stop" ]; then
+	rm /var/run/my_process.pid
+	trap "echo manage_my_process stopped" SIGTERM
+	pkill -f manage_my_process
+elif [ "$1" = "restart" ]; then
+	pkill -f manage_my_process &
+	trap 'echo manage_my_process restarted; sudo rm /var/run/my_process.pid; sudo touch /var/run/my_process.pid; ./manage_py_process &; echo "$!" >> /var/run/my_process.pid' SIGTERM
+else
+	echo "Usage: manage_my_process {start|stop|restart}"
+fi
+
